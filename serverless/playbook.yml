@@ -3,10 +3,10 @@
   hosts: all
   become: true
   vars:
-    efs_ip: "YOUR_EFS_IP"
-    share_path: "/share"
-    llm_data: "/share/llm"
-    llm_tmp: "/share/tmp"
+    efs_ip: "fs-xxxxxxxx.efs.us-west-2.amazonaws.com"
+    share_path: "/mnt/share"
+    llm_data: "/mnt/share/llm"
+    llm_tmp: "/mnt/share/tmp"
     docker_compose_dir: "/opt/llm"
   tasks:
     - name: Update apt cache

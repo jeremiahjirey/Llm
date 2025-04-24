@@ -49,3 +49,4 @@ next-env.d.ts
 
 # Ignore all zip files in the layers directory
 /serverless/src/layers/*.zip
+/lambda/*
